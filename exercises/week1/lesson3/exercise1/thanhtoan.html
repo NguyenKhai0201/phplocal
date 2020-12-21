@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+</head>
+<body>
+	<h1> Thanh toán </h1>
+	<p>
+		<label for=" ten day du " > Tên đầy đủ </label>
+			<input type="text" name="Tên đầy đủ" size="70" placeholder=" Nhập tên đầy đủ nguời mua hàng " >
+	</p>
+	<p>
+		<label for=" Passaword" > Password </label>
+			<input type="password" name="Password" size="30" placeholder=" Nhập password ">
+	</p>
+	<p>
+		<label for=" Email " > Email </label>
+			<input type=" email" name=" Email " size="30" placeholder=" Nhập email" >
+	</p>
+	<p>
+		 Ngày sinh 
+			<input type="date" name=" ngaysinh " size="30" placeholder=" mm/dd/yyyy " >
+	</p>
+	<p>
+		Mặt hàng mua
+			<input list="mhm"/>
+		<datalist id="mhm" >
+			<option value="Shoes" >
+			<option value="Socks">
+			<option value ="Shirt">
+			<option value ="Sandals">
+			<option value ="Trousers">
+		</datalist>
+	</p>
+	<p>
+		<label for="range" > Số lượng mua </label>
+			<input type="number" size=" 10" min="1" max="5" >
+	</p>
+	<p>
+		<label for="Bkvc" > Bán kính vận chuyển </label>
+			<input type="range" name="Bkvc" min="10" max="20" >
+	</p>
+	
+	<button > Đăng Ký </button>
+</body>
+</html>
