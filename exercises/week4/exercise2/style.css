@@ -1,0 +1,47 @@
+.header {
+	color:#ffff00;
+	font-size:25px;
+	text-align:center;
+}
+.content1 {
+	width:40%;
+	height:320px;
+	float:left;
+	margin-left: 5%;
+	text-align: center;
+}
+.content2 {
+	width:40%;
+	height:320px;
+	float:right;
+	margin-right: 5%;
+	text-align: center;
+}
+.content3 {
+	width:40%;
+	height:320px;
+	float:left;
+	margin-left: 5%;
+	text-align: center;
+}
+.content4{
+	width:40%;
+	height:320px;
+	float:right;
+	margin-right: 5%;
+	text-align: center;
+}
+img{
+	width:30%;
+	height:28%;
+	text-align: center;
+}
+.line{
+	opacity:0.5;
+	font-family:'Open Sans', sans-serif;
+}
+
+
+
+
+

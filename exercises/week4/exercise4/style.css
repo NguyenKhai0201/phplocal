@@ -1,0 +1,59 @@
+div {
+	background-color:#e5e5e5;
+}
+.header{
+	margin-left:10px;
+	padding:auto;
+	width:90.5%;
+}
+.header-ck{
+	margin-left:10px;
+	padding:auto;
+	width:98%;
+}
+.header-date{
+	margin-left:10px;
+	padding:auto;
+	width:90%;
+}
+.h3 {
+	text-align:center;
+}
+.label {
+	padding-left:25%;
+}
+.footer {
+	text-align:center;
+}
+.submit {
+	background-color:#007fff;
+	padding:5px 10px;
+	box-sizing: border-box;
+	border:1px solid black;
+	border-radius:0px;
+}
+body{
+	width:50%;
+}
+.input {
+	padding:5px 10px;
+	box-sizing: border-box;
+  	border: 1px solid black;
+  	border-radius: 0px;
+}
+.signature{
+	width:91%;
+	font-size: 12px;
+	line-height:2;
+	padding:4px;
+}
+.group-addon {
+	padding:6px 12px;
+	font-size:14px;
+	border:1px solid #ccc;
+	border-radius:4px;
+	width:1%;
+	white-space:nowrap;
+	vertical-align:middle;
+	display:table-cell;
+}

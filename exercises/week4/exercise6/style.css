@@ -1,0 +1,84 @@
+.header{
+	width:40%;
+	height:40%;
+	padding:1%;
+	background-color:#0000FF;
+	margin-left:25%;
+	margin-top:10%;
+}
+.container{
+	background-color:white;
+	display:grid;
+	grid-template-columns:90% 50%;
+}
+.container-border {
+	background-color:white;
+	border:solid blue 10px;
+	height:60%;
+}
+.button-facebook{
+	width:32%;
+	background-color:blue;
+	color:white;
+	height:0.4%;
+}
+.button-google{
+	width:32%;
+	background-color:red;
+	color:white;
+	height:0.4%;
+}
+.button-phone {
+	width:32%;
+	background-color:green;
+	color:white;
+	height:0.4%;
+}
+.button-login{
+	width:90%;
+	height:0.4%;
+	background-color:blue;
+	color:white;
+}
+.button-registration{
+	width:90%;
+	height:0.4%;
+	background-color: white
+}
+.label_one{
+	width:50%;
+	float:left;
+	margin-bottom:2%;
+	margin-top:1%;
+	color:blue;
+}
+.label_two{
+	float:right;
+	margin-right:4%;
+	margin-top:4.5%;
+	margin-bottom:2%;
+	color:blue;
+}
+.text_content{
+	color:red;
+}
+input {
+	width:90%;
+	height:0.4%;
+}
+fieldset{
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	text-align:center;
+	margin-top:1%;
+	margin-left:5%;
+}
+p{
+	float:left;
+	color:blue;
+}
+.board{
+	border:solid 2px;
+	width:50%;
+}

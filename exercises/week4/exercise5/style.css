@@ -1,0 +1,47 @@
+.container-bg {
+	padding:1%;
+	background-color:#0000FF;
+}
+.container{
+	background-color:white;
+	display:grid;
+	grid-template-columns:auto;
+}
+.button_one {
+	color:white;
+	background:green;
+	width:90%;
+}
+.button_two{
+	width:90%;
+}
+.label {
+	color:#fff;
+	background-color:black;
+	opacity:0.2;
+	height:30%;
+	width:40%;
+	top:70%;
+	left:10%;
+	padding-left:3%;
+}
+.content {
+	width:20%;
+	float:right;
+}
+.display {
+ 	width:60%;
+ 	float:left;
+}
+fieldset {
+	text-align:center;
+	border-right:none;
+	border-left:none;
+	border-bottom:none;
+}
+input{
+	size:90%;
+}
+img {
+	width:90%
+}

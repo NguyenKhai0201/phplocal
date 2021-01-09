@@ -1,0 +1,54 @@
+.button {
+	color:white;
+	background-color:blue;
+	border-radius:100px;
+	font-size:16px;
+	position:absolute;
+	opacity:0.4;
+	float:left;
+	padding :20px;
+}
+.active {
+	color:white;
+	background-color: green;
+	border-radius:100px;
+	float:right;
+	padding:20px;
+	opacity:0.6;
+}
+.line{
+	background-color:white;
+	font-weight:normal;
+	opacity:0.3;
+	letter-spacing: 1px;
+}
+.theme{
+	background-color:white;
+	font-weight: normal;
+	opacity:0.4;
+}
+img{
+	opacity:1.2;
+	text-align:center;
+}
+img.phone {
+	width:700px;
+	height:300px;
+	float:right;
+}
+img.tym {
+	width:450px;
+	height:300px;
+	float:left;
+	margin-top:174.8px;
+}
+.contet1 {
+	width:40%;
+	margin-left:5%;
+	float:left;
+}
+.contet2 {
+	width:40%;
+	float:right;
+	margin-right:5%;
+}

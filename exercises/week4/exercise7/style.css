@@ -1,0 +1,32 @@
+body{
+	width:100%;
+	height:800px;
+	background-image: url("giang_sinh_2021.jpg");
+	font-family: "Sofia", sans-serif;
+	text-align:center;
+	color:white;
+}
+.body_board{
+	margin-top:20%;
+	margin-left:20%;
+	margin-right:20%;
+}
+.header{
+	font-family: "Sofia", sans-serif;
+	color:#FFE4B5;
+	font-size:30px;
+}
+button{
+	background-color:#0000FF;
+	border-radius:100px;
+	border:2px solid #000080;
+	padding:5px;
+}
+.img{
+	background-size:100% 100%;
+	text-align:center;
+	height:50%
+}
+
+
+

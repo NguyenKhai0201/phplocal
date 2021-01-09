@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> </title>
+		<meta charset="uft-8">
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<script src="https://fontawesome.com/icons/calendar-alt?style=regular"></script>
+	</head>
+	<body>
+		<form action="action_page.php">
+		<div>
+			<h3 class="h3"> Đăng ký thành viên </h3>
+			<p> Để đăng ký thành viên, bạn cần khai báo tất cả các ô trống dưới đây </p>
+			<p class="header">
+				<br><input class="input" type="text" name="firstname" size="98%" placeholder=" Họ và tên đệm"/>
+				</br><br>
+				<input class="input" type="text" name="lastname" size="98%" placeholder="Tên"/>
+				</br><br>
+				<input class="input" type="text" name="userid" size="98%" placeholder="Tên đăng nhập"/>
+				</br><br>
+				<input class="input" type="email" name="email" size="98%" placeholder=" Email"/>
+				</br><br>
+				<input class="input" type="password" name="matkhau" size="98%" placeholder="Mật khẩu "/>
+				</br><br>
+				<input class="input" type="password" name="matkhau" size="98
+				%" placeholder="Lặp lại mật khẩu"/>
+			</p>	
+			<p class="header"> Giới tính 
+				<label class="label"><input type="radio" name="sex"/>N/A</label>
+				<label><input type="radio" name="sex"/>Nam</label>
+				<label><input type="radio" name="sex"/>Nữ</label>
+			</p>
+			<input class="header-date" placeholder="Ngày tháng năm sinh" type="date">
+			<p class="header-ck"><textarea class="signature" placeholder="chữ ký"></textarea></p>
+			<select class="header" name="security_question" id="security_question" required>
+					<option value="" disabled selected hidden>Câu hỏi bảo mật</option>
+					<option> Năm sinh của bạn là năm bao nhiêu ?</option>
+					<option> Môn thể thao bạn yêu thích là gì ?</option>
+					<option> Sở thích của bạn là gì ? </option>
+					<option> Người yêu bạn tên là gì ?</option>
+				</select>
+			<br>
+			<p class="header"> <input class="input" type="text" name="TL" size="98%" placeholder=" Trả lời câu hỏi"/></p>
+			<p class="footer"> <input type="checkbox" name="chon"/> Tôi đồng ý 
+				<button> Quy định đăng ký thành viên </button>
+			</p>
+			<p class="footer"> <input class="input" type="reset" value="Thiết lập lại"/>
+				<input class="submit" type="submit" value="Đăng ký thành viên"/>
+			</p>
+		</div>
+	</form>
+	</body>
+</html>
+
