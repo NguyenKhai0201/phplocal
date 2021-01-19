@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ex7</title>
+		<meta charset="utf-8">
+		
+	</head>
+	<body>
+		<input style="background-color:#0000FF ;color:white; padding:2px" type="button" value="Begin" onclick="nhap()"/>
+		<script type="text/javascript">
+			function nhap()
+			{
+				var num=prompt("Nhập số:")
+				num=parseInt(num);
+				//kiểm tra chẵn lẻ
+				if(num%2==0)
+				{
+					document.write('số'+ num +'là số chẵn'); 
+				}
+				else
+				{
+					document.write('số'+num +' là số lẻ');
+				}					
+			}
+		</script>
+	</body>
+</html>
+		 
+			

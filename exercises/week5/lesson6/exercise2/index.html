@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ex2</title>
+		<meta charset="uft-8">
+		<style>
+			#ket_qua{
+				color:white;
+			}
+			.header{
+				background-image: url('img/matran.png');
+				color:white;
+				margin:10%;
+				padding:10% 2%;
+			}
+			p{
+				font-size:200%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div style="text-align:center">
+				<input type="text" id="so_a"/>
+				<input type="text" id="so_b"/>
+				<input type="button" value="Bắt đầu" onclick="sapxep()"/>
+				<div>
+					<p>Số lớn nhất:
+						<a id="ket_qua"></a>
+					</p>
+				</div>
+
+				<script>
+					function sapxep()
+					{
+						var a=document.getElementById("so_a").value;
+						var b=document.getElementById("so_b").value;
+						document.getElementById("ket_qua").innerHTML=Math.max(a,b);
+					}
+				</script>
+			</div>
+		</div>
+	</body>
+</html>

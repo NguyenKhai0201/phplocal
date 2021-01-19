@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EX4</title>
+	</head>
+	<body>
+		Nhập số a:<input type="text" id="a"><br><br>
+		Nhập số b:<input type="text" id="b"><br><br>
+		<input type="button" value="Tìm" onclick="tinh()"/>
+		
+		<script type="text/javascript">
+			function tinh()
+			{
+				var a=document.getElementById("a").value;
+				var b=document.getElementById("b").value;
+				function UCLN(x,y)
+				{
+					while(x!=y)
+					{	
+						if(x>y)
+						{
+							x=x-y;
+						}
+						else
+						{
+							y=y-x;
+						}
+					}
+					return x;
+				}
+				document.write("Uớc chung lớn nhất:"+UCLN(a,b))
+			}
+		</script>
+	</body>
+</html>

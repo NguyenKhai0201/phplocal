@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EX1</title>
+		<meta charset="uft-8">
+	</head>
+	<body>
+		1st Number: 
+			<input id="so_a" type="text"/>
+		<br>
+		<br>
+		2nd Number:
+			<input id="so_b" type="text"/>
+		<br>
+		<br>
+		<input type="button" value="Multiply" onclick="tich()"/>
+		<input type="button" value="Divide" onclick="thuong()"/>
+		<p> The Rensult Is:</p>
+		<div id="ket_qua"></div>
+		<script type="text/javascript" language="javascript">
+			function tich()
+		{	//nhap du lieu
+			var a=document.getElementById("so_a").value;
+			var b=document.getElementById("so_b").value;
+			var tich=a*b;
+			//xu ly thong so
+			document.getElementById("ket_qua").innerHTML=tich;
+		}
+			function thuong()
+		{
+			var a=document.getElementById("so_a").value;
+			var b=document.getElementById("so_b").value;
+			var thuong=a/b;
+			document.getElementById("ket_qua").innerHTML=a/b;
+		}
+		</script>
+	</body>
+</html>
