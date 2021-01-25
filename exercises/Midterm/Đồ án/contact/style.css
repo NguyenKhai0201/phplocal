@@ -1,0 +1,121 @@
+body {
+	font-family:robotoReguler !important;
+	font-weight: 400;
+	letter-spacing:0.05em;
+	color:black;
+}
+.trial-driving input[type="text"], input[type="tel"], input[type="email"] {
+	padding:20px;
+	border:solid 1px gainsboro;
+	border-radius:5px 5px;
+	transition: box-shadow .3s,border .3s;
+	width:100%;
+	margin-bottom:15px;
+	display:block;
+	height:20px;
+	font-size:15px;
+}
+.wpcf7-form-control-wrap input{
+	background-color:#fafafa;
+	width:100%;
+	border-bottom:1px solid gray;
+	padding-bottom:4px;
+	transition:all .3s
+}
+.wpcf7-from-control-wrap{
+	position: relative;
+}
+.page{
+	position:relative;
+	overflow:hidden;
+	min-height:100vh !important;
+	width:100%;
+}
+.shell {
+	min-width:300px;
+	margin-right:auto;
+	margin-left:auto;
+}
+.bg-white{
+	background-color:white;
+}
+.bg-img{
+	background-image:url("img/bg-image-6.jpg");
+	padding:2%;
+	text-align:center;
+}
+.layout-bordered{
+	padding-top:30px;
+}
+.layout-bordered_aside{
+	margin-top:50px;
+}
+.layout-bordered_aside-item{
+	padding-top:15px 0px;
+}
+.heading{
+	font-size:13px;
+	font-weight:700;
+	letter-spacing:.1em;
+	color:#151515;
+	text-transform:uppercase;
+}
+.ajax-loader{
+	display:inline-block;
+	width:16px;
+	margin:0 0 0 4px;
+}
+.parallax-container{
+	position:relative;
+	overflow:hidden;
+}
+.bg-gray-3{
+	background-color:#514f4c;
+	color:#fff;
+}
+.material-parallax{
+	position:absolute;
+	z-index:1;
+	background-position:center center;
+}
+.footer-modern_inner{
+	padding:50px 0 20px;
+}
+.range{
+	display: flex;
+	flex:0 1 auto;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+.range-90{
+	transform:translate3d(0,-45px,0);
+
+}
+.range-20{
+	transform:translate3d(0,-20px,0);
+	margin-bottom:-20px;
+	pointer-events:none;
+}
+.box-decorated{
+	padding-left:20px;
+	border-left:1px solid #151515;
+	text-align: left;
+}
+.article{
+	display:block;
+}
+.box-decorated .box-decorated_title {
+	margin-top:15px;
+}
+.text-small{
+	max-width:320px;
+	padding-top: 20px;
+	text-align:justify;
+	font-size:14px;
+}
+.ringhts{
+	color:#fff;
+}
+.section-lg{
+	padding:80px 0;
+}
