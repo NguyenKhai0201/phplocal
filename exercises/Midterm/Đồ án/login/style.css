@@ -2,6 +2,9 @@ body {
 padding-top: 20px;  
 padding-bottom: 20px;
 }
+ul{
+	list-style:none;
+}
 .header, .marketing, .footer {  
 padding-right: 15px;    
 padding-left: 15px;
@@ -49,7 +52,7 @@ padding-left: 0;
 .jumbotron { border-bottom: 0;}
 } 
  
-@-ms-viewport {width: device-width;}    
+@ms-viewport {width: device-width;}    
 .or-text-row {  
 display: table-row;
 }
@@ -96,3 +99,46 @@ border-radius: 25px;
  
 .btn-group {    margin-bottom: 5px;}
 .fa {   padding-right: 10px;}
+.parallax{
+	background-image: url("img/contact.jpg");
+	display: block; 
+}
+.parallax-container{
+	position:relative;
+	overflow:hidden;
+}
+.bg-gray-3{
+	background-color:#514f4c;
+	color:#fff;
+}
+.range{
+	display: flex;
+	flex:0 1 auto;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+.range-20{
+	transform:translate3d(0,-20px,0);
+	margin-bottom:-20px;
+	pointer-events:none;
+}
+.range-90{
+	transform:translate3d(0,-45px,0);
+
+}
+.box-decorated{
+	padding-left:20px;
+	border-left:1px solid #151515;
+	text-align: left;
+}
+.box-decorated .box-decorated_title {
+	margin-top:15px;
+}
+.footer-modern_inner{
+	padding:50px 0 20px;
+}
+.shell {
+	min-width:300px;
+	margin-right:auto;
+	margin-left:auto;
+}
