@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ex4</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar nabbar-expand-sm bg-dark navbar-dark">
+				<ul class="navbar-nav d-flex mb-3 flex-row">
+					<li class="nav-item active p-2 ">
+						<a class="nav-link" href="#">Navbar</a>
+					</li>
+					<li class="nav-item p-2">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item p-2">
+						<a class="nav-link" href="#">Features</a>
+					</li>
+					<div class="dropdown p-2">
+						<div class="dropdown-toggle text-white" data-toggle="dropdown">Dropdown</div>
+						<div class="dropdown-menu">
+							<a class="dropdown-item">Action</a>
+							<a class="dropdown-item">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item">Something else here</a>
+						</div>
+					</div>
+				</ul>
+				<form class="form-inline" action="#">
+					<div stype="float-right">
+						<input class="form-control mr-sm-2" type="text" placeholder="Email">
+						<input class="form-control mr-sm-2" type="text" placeholder="Password">
+						<button class="btn btn-success" type="submit">Sign in</button>
+					</div>
+				</form>
+			</nav>
+			<div class="bg-light text-dark">
+				<div class="jumbotron">
+					<h1>Hello,world!</h1>
+					<p>Lorem ipsum dolor sit amet,consectetur adipisicing elit.Itaque deleniti quod ratione perspiciatis molestias minus id,velit,onsectetur voluptatibus et obcaecati hic magnam alias, cumque autem.Hic quis ipsum harum.</p>
+					<a class="btn btn-primary btn-lg" type="button" data-toggle="modal" data-target="#myModal">Learn more</a>
+					<div class="modal fade" id="myModal">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4>Sample modal title</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.Necessitatibus nihil repellendus cumque fugiatt optio qui facilis ipsam!Eius nostrum sed aliquam,quis unde error molestiae magnam,doloremque aut aliquid accusantium!
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Save changer</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="alert alert-warning alert-dismissible fade show">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<strong>Holy guacamole!</strong>You should check in on some of those fields below.
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>Heading</h3>
+					<p>Lorem ipsum,dolor sit amet consectetur adipisicing elit.Fuga voluptatibus eos illum sunt voluptate assimenda magni quibusdam.Impedit,aliquid? Voluptatum doloremque repellendus ut at laborum architecto explicabo facere ad.Quisquam!</p>
+					<i class="fa fa-thumbs-o-up" aria-hidden="true">
+						<a type="button" class=" btn-light" data-toggle="modal" data-target="#mymodal">View details</a>
+						<div class="modal fade" id="mymodal">
+							<form action="#">
+    							<div class="modal-dialog modal-sm">
+      								<div class="modal-content">
+        								<div class="modal-header">
+          									<h4 class="modal-title">Contact Us</h4>
+          									<button type="button" class="close" data-dismiss="modal">&times;</button>
+        								</div>
+        								<div class="modal-body">
+         									<h5>Guest name</h5>
+         									<input type="text">
+         									<h5>Feedback</h5>
+											<textarea cols="30" rows="5"></textarea>
+        								</div>
+        								<div class="modal-footer">
+          									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          									<button type="button" class="btn btn-primary">Send</button>
+        								</div>
+        							</div>
+    							</div>
+    						</form>
+						</div>
+					</i>
+				</div>
+				<div class="col-sm-4">
+					<h3>Heading</h3>
+					<p>Lorem ipsum,dolor sit amet consectetur adipisicing elit.Fuga voluptatibus eos illum sunt voluptate assimenda magni quibusdam.Impedit,aliquid? Voluptatum doloremque repellendus ut at laborum architecto explicabo facere ad.Quisquam!</p>
+					<i class="fa fa-mobile" aria-hidden="true" href="#">
+						<a type="button" class=" btn-light" data-toggle="modal" data-target="#mymodal">View details</a>
+						<div class="modal fade" id="mymodal">
+							<form action="#">
+    							<div class="modal-dialog modal-sm">
+      								<div class="modal-content">
+        								<div class="modal-header">
+          									<h4 class="modal-title">Contact Us</h4>
+          									<button type="button" class="close" data-dismiss="modal">&times;</button>
+        								</div>
+        								<div class="modal-body">
+         									<h5>Guest name</h5>
+         									<input type="text">
+         									<h5>Feedback</h5>
+											<textarea cols="30" rows="5"></textarea>
+        								</div>
+        								<div class="modal-footer">
+          									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          									<button type="button" class="btn btn-primary">Send</button>
+        								</div>
+        							</div>
+    							</div>
+    						</form>
+						</div>
+					</i>
+				</div>
+				<div class="col-sm-4">
+					<h3>Heading <span class="badge badge-primary">New</span></h3>
+					<p>Lorem ipsum,dolor sit amet consectetur adipisicing elit.Fuga voluptatibus eos illum sunt voluptate assimenda magni quibusdam.Impedit,aliquid? Voluptatum doloremque repellendus ut at laborum architecto explicabo facere ad.Quisquam!</p>
+					<i class="fa fa-map-marker" aria-hidden="true" href="#">
+						<a type="button" class=" btn-light" data-toggle="modal" data-target="#mymodal">View details</a>
+						<div class="modal fade" id="mymodal">
+							<form action="#">
+    							<div class="modal-dialog modal-sm">
+      								<div class="modal-content">
+        								<div class="modal-header">
+          									<h4 class="modal-title">Contact Us</h4>
+          									<button type="button" class="close" data-dismiss="modal">&times;</button>
+        								</div>
+        								<div class="modal-body">
+         									<h5>Guest name</h5>
+         									<input type="text">
+         									<h5>Feedback</h5>
+											<textarea cols="30" rows="5"></textarea>
+        								</div>
+        								<div class="modal-footer">
+          									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          									<button type="button" class="btn btn-primary">Send</button>
+        								</div>
+        							</div>
+    							</div>
+    						</form>
+						</div>
+					</i>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

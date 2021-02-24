@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ex1</title>
+		<meta charset="utf-8">
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<form>
+			<div class="container">
+				<div class="col-sm-2">
+					<label>Frist name</label>
+					<input type="text">
+				</div>
+				<div class="col-sm-2">
+					<label>Last name</label>
+					<input type="text">
+				</div>
+				<label>
+					<input type="radio">Male
+				</label>
+				<label>
+					<input type="radio">Female
+				</label>
+				<input type="date" placeholder="mm/dd/yyy">
+				<input type="button" class="bg-primary text-white" value="Submit">
+			</div>
+		</form>
+		<script type="text/javascript">
+			$("#registration").validate({
+				rules:{
+					Fristname:"required",
+					lastname:"required"
+				},
+				messages:{
+					Fristname:"Trường này bắt buộc phải nhập",
+					lastname:"Trường này bắt buộc phải nhập"
+				},
+				submitHandler: function(form){
+					form.submit();
+				}
+			});
+		</script>
+	</body>
+</html>

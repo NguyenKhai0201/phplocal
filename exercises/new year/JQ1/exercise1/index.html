@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ex1</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div class="header">
+			<div class="">
+				<h3>Chu vi và diện tích hình chữ nhật</h3>
+			</div>
+			<div>
+				Nhập vào chiều dài(đơn vị:met)
+				<br>
+				<input type="text" id="so_a"/>
+				<br>
+				Nhập vào chiều rộng(đơn vị:met)
+				<br>
+				<input type="text" id="so_b"/>
+				<br>
+				<button class="" value="Tính chu vi và diện tích" onclick="tinh()"/>
+				<div>
+					Chu vi:
+					<a id="ket_qua"></a>
+					<br>
+					Diện tích:
+					<a id="ket_qua1"></a>
+				</div>
+			</div>
+			<script>
+				function tinh()
+				{
+					var a=document.getElementById('so_a').value;
+					var b=document.getElementById('so_b').value;
+					chuvi=(a+b)*2;
+					dientich=(a*b);
+					document.getElementById("ket_qua1").innerHTML=dientich;
+					document.getElementById("ket_qua").innerHTML=chuvi;
+				}
+			</script>
+		</div>
+	</body>
+</html>
