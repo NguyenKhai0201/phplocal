@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ex3</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="container bg-secondary">
+			<div class="row border">
+				<form action="#">
+					<div class="col-sm-6">
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" class="form-control" oninvalid="this.setCustomValidity('Không được để trống trường này')" required />
+						<label for="email" class="mt-2">Email</label><br>
+						<input type="text" name="email" id="email" oninvalid="this.setCustomValidity('Không được để trống trường này')" required />
+						<label class="mt-1">Country</label>
+						<select name="country" id="country" oninvalid="this.setCustomValidity('Cần phải chọn Country')" required />
+							<option>Select-contry</option>
+							<option value="Viet Nam">Viet Nam</option>
+							<option value="Japan"> Japan</option>
+							<option value="USA"> USA</option>
+						</select>
+						<input type="submit" value="Send-info" class="mt-2 mb-2" onclick="checkEmail()">
+					</div>
+				</form>
+				<div id="result"></div>
+				<script type="text/javascript"> 
+					function checkEmail() { 
+						var name= document.getElementById('name')
+						var country= document.getElementById('country')
+    					var email = document.getElementById('email'); 
+    					var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+    					if (!filter.test(email.value)) { 
+            				alert('Hay nhap dia chi email hop le.\nExample@gmail.com');
+             				email.focus; 
+             			return false; 
+    					}
+    					else{  
+             				document.getElementById("result").innerHTML= "Name:" + name + "<br>" +"Email:" +email +"<br>" +"Country:" + country;
+    					} 
+					} 
+				</script>
+			</div>
+		</div>
+	</body>
+</html>
