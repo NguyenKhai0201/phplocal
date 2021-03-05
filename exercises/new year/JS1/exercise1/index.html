@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ex1</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form action="#">
+			Nhập vào số a : <br>
+			<input type="number" name="number" id="a" required />
+			<input type="submit" value="kiểm tra" onclick="check()" />
+			<div id="ket_qua"></div>
+		</form>
+		<script type="text/javascript" language="javascript">
+			function check(){
+				var a=document.getElementById('a').value ;
+				if ((a >=1 && a <=10) || (a >=50 && a <=100)) {
+					alert("hợp lệ");
+				}
+				else {
+					document.getElementById("ket_qua").innerText="Không nằm trong khoảng từ 1-10 hoặc 50-100 ";
+					return false;
+				}
+			}
+		</script>
+	</body>
+</html>

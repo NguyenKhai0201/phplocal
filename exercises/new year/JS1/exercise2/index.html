@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ex2</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="bg-drank text-white">
+				<h3>Giải phương trình bậc nhất </h3>
+				<p><b>ax &nbsp; + &nbsp; b &nbsp; = &nbsp; 0</b></p>
+			</div>
+			<form action="#">
+				<label>Nhập vào hệ số a:</label>
+				<input type="number" name="number" id="so_a" onkeyup="myEquation()" required />
+				<br>
+				<label>Nhập vào hệ số b: </label>
+				<input tyoe="number" name="number" id="so_b" onkeyup="myEquation()" required /> 
+				<p>Phương trình bậc nhất của bạn đang có dạng</p>
+				<div id="equation"></div>
+				<input class="bg-primary text-white" type="submit" value="Tìm x" onclick="search()">
+				<div id="result"></div>
+			</form>
+			<script type="text/javascript" class="javascript">
+				function myEquation(){
+					var a=document.getElementById('so_a').value;
+					var b=document.getElementById('so_b').value;
+					equation = a +"x +" + b + "= 0";
+					document.getElementById("equation").innerHTML= equation;
+				}
+
+				function search() {
+					var a=document.getElementById('so_a').value;
+					var b=document.getElementById('so_b').value;
+					x=-b/a;
+					document.getElementById("result").innerHTML ="x=" + x;
+					
+				}
+			</script>
+		</div>
+	</body>
+</html>

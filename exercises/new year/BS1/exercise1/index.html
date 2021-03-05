@@ -10,24 +10,36 @@
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<form>
-			<div class="container">
-				<div class="col-sm-2">
-					<label>Frist name</label>
-					<input type="text">
+		<form action="#">
+			<div class="row">
+				<div class="container">
+					<div class="col-sm-6">
+						<label>Frist name</label>
+						<input type="text">
+					</div>
+					<div class="col-sm-6">
+						<label>Last name</label>
+						<input type="text">
+					</div>
+					<div class="col">
+						<label>
+							<input type="radio">Male
+						</label>
+						<label>
+							<input type="radio">Female
+						</label>
+					</div>
+					<div class="col-sm-6">
+						<label>
+							<input type="date" placeholder="mm/dd/yyy">
+						</label>
+					</div>
+					<div>
+						<label>
+							<input type="button" class="bg-primary text-white" value="Submit">
+						</label>
+					</div>
 				</div>
-				<div class="col-sm-2">
-					<label>Last name</label>
-					<input type="text">
-				</div>
-				<label>
-					<input type="radio">Male
-				</label>
-				<label>
-					<input type="radio">Female
-				</label>
-				<input type="date" placeholder="mm/dd/yyy">
-				<input type="button" class="bg-primary text-white" value="Submit">
 			</div>
 		</form>
 		<script type="text/javascript">

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ex2</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h2 class="text-center">Số chẵn lẻ</h2>
+			<form action="#">
+				<p>Nhập số a</p>
+				<input type="number" name="number" id="so_a" pattern="{0-10}" required="Vui lòng không bỏ trống" />
+				<input class="bg-success text-white" type="submit" value="Kết quả" id="in">
+				<div id="result"></div>
+			</form>
+			<script type="text/javascript" class="javascript">
+				$(document).ready(function(){
+					$("#in").click(function(){
+						var a=$("so_a").val();
+						var even;
+						var odd;
+						if(a=='text'&&a==''){
+							$("#result").html("Dữ liệu nhập không hợp lệ").css("color","red");
+						}else {
+							for (var i = 1; i <= a; i++) {
+								if(i%2!=0){
+									odd+= i;
+								}
+								else{
+									even+=i;
+								}
+							}
+							$("#result").html('Các số chẵn từ 1 -' +a ' : ' +even ' <br> Các số lẻ từ 1 -' +a ' : ' +odd);
+						}
+					});
+				});
+			</script>
+		</div>
+	</body>
+</html>
