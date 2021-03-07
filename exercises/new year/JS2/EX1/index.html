@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ex1</title>
+		<meta charset="utf-8">
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  		<style type="text/css">
+  			.container{
+  				width: 60%;
+  				padding:20%;
+  				background-color: white;
+  			}
+  		</style>
+	</head>
+	<body>
+		<div class="container-Fluid bg-dark">
+			<div class="container">
+						<label>Number of children</label>
+						<input type="text" name="number_of_children" id="numberofchildren">
+						<label>Partner's Name</label>
+						<input type="text" name="partner_sname" id="partnersname">
+						<label>Geographic Location</label>
+						<input type="text" name="geographic_location" id="geographiclocation"><br>
+						<label class="mt-1">Job title</label><br>
+						<input type="text" name="jobTitle" id="jobtitle">
+					<button class="mt-2" onclick="screenRecording()">Screen Recording</button>
+					<div id="result"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function screenRecording() {
+				var numberofchildren=document.getElementById('numberofchildren').value;
+				var partnersname=document.getElementById('partnersname').value;
+				var geographiclocation=document.getElementById('geographiclocation').value;
+				var jobtitle=document.getElementById('jobtitle').value;
+				document.getElementById("result").innerHTML+='You will be a '+ jobtitle +' in '+geographiclocation+', and married to '+ partnersname+' with '+numberofchildren;
+            if(parseInt(numberofchildren)=1){
+                document.getElementById("result").innerHTML+=' kid';
+            }else{
+                document.getElementById("result").innerHTML+=' kids';
+            }
+        }
+		</script>
+	</body>
+</html>

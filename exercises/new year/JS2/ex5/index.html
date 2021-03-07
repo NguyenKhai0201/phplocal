@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ex5</title>
+		<meta charset="utf-8">
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  		<style type="text/css">
+  			.container{
+  				width: 60%;
+  				padding:20%;
+  				background-color: white;
+  			}
+  		</style>
+	</head>
+	<body>
+		<div class="container-Fluid bg-dark">
+			<div class="container" id="Selectall">
+        <label>
+          <input type="checkbox" name="checl_all" id="checkall">Check All
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="item1" id="item1">Item
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="item2" id="item2">Item2
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="item3" id="item3">Item3
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="item4" id="item4">Item4
+        </label>
+      </div>
+    </div>
+    <script>
+      $(function() {
+        $('#checkall').click(function(){
+          $('#Selectall').find(':checkbox').attr('checked',this.checked);
+        });
+      });  
+    </script>
+  </body>
+</html>

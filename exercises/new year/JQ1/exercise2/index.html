@@ -9,32 +9,33 @@
 	<body>
 		<div class="container">
 			<h2 class="text-center">Số chẵn lẻ</h2>
-			<form action="#">
+			
 				<p>Nhập số a</p>
-				<input type="number" name="number" id="so_a" pattern="{0-10}" required="Vui lòng không bỏ trống" />
-				<input class="bg-success text-white" type="submit" value="Kết quả" onclick="check()">
-				<div id="result"></div>
-			</form>
-			<script type="text/javascript" class="javascript">
-				function check() {
-					var even;
-					var odd;
-					var a=document.getElementById('so_a').value;
-					if (a==''){
-						document.getElementById("result").innerText="Dữ liệu nhập không hợp lệ"
-					}else{
-						for (var i=1 ;i<=a ;i++){
-							if(i%2!=0){
-								odd+=i;
-							}
-							else{
-								even+=i;
-							}
-						}
-						document.getElementById("result").innerHTML="Các số chẵn từ 1 -" +a " : " +even " <br> Các số lẻ từ 1 -" +a " : " +odd;
-					}
-				}
-			</script>
+				<input type="number" name="number" id="so_a" pattern="{0-10}[0,9]" required="Vui lòng không bỏ trống" />
+				<button class="bg-success text-white" type="button" id="check">Kết quả</button>
+				<p id="result"></p>
 		</div>
+			<script>
+				$(document).ready(function () {
+    				$("#check").click(function () {
+        				var a=$("#so_a").val();
+        				var odd='';
+        				var even='';
+        				if(a==''){
+            				$("#result").text('Dữ liệu không hợp lệ');
+        				}
+        				else{
+            				for(var i=1;i<=a;i++){
+                				if (i%2!=0){
+                    				odd+=i+',';
+                			}else{
+                    			even+=i+',';
+                			}
+            			}
+            				$("#result").html('Các số chẵn từ 1-'+a+': '+even+'<br>Các số lẻ 1-'+a+': '+odd);
+        				}
+    				});
+				});
+			</script>
 	</body>
 </html>

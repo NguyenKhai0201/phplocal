@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ex2</title>
+		<meta charset="utf-8">
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  		<style type="text/css">
+  			.container{
+  				width: 60%;
+  				padding:20%;
+  				background-color: white;
+  			}
+  		</style>
+	</head>
+	<body>
+		<div class="container-Fluid bg-dark">
+			<div class="container">
+        <label>Employee Salary</label>
+        <input type="text" name="employee_salary" id="employeesalary"><br>
+        <button class="bg-info mt-2" onclick="check()">Salary</button>
+        <div id="result"></div>
+      </div>
+    </div>
+    <script>
+        function check(){
+            var a=document.getElementById("employeesalary").value;
+            if(parseInt(a)<500){
+                document.getElementById("result").innerHTML='Bạn không phải nộp thuế!';
+            }else{
+              document.getElementById("result").innerHTML='Thuế bạn phải nộp là: '+ a/10;
+            }
+        }
+    </script>
+  </body>
+</html>

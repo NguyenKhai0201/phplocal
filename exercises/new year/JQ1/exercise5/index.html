@@ -1,60 +1,49 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>ex5</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://code.jquery.com/jquery-latest.js"></script>
-		<style type="text/css">
-			.text-right{
-				float: right;
+<head>
+	<title>exercise5</title>
+  	<meta charset="utf-8">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">       
+    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        
+        .dropdown-menu.show {
+            display: contents;
+        }
+        .import:hover{
+				background-color:yellow;
+				color:black;
 			}
-		</style>
-		<script>
-			$(function(){
-    			$('#button').Services(function(){
-        			$('#submenu').slideToggle(2000,function(){
-            			
-        			});
-    			});
-			});
-		</script>
-	</head>
-	<body>
-		<div class="container">
-			<div class="row text-white">
-				<div class="col-sm-6">
-					<ul class="list-group">
-						<li class="bg-dark text-center">
-							<h4>Brand Logo</h4>
-						</li>
-						<li type="button" class="list-group-item bg-secondary text-left"><i class="fas fa-tachometer-alt"></i>Dashboard</li>
-
-						<li type="button" class="list-group-item bg-secondary text-left"><i class="fas fa-gift"></i>UI Elements</li>
-
-						<li type="button" id="button" class="list-group-item bg-secondary text-left">
-							<i class="fas fa-globe-americas"></i>
-							Services
-							<span class="text-right"><i class="fas fa-angle-down"></i></span>
-						</li>
-						<li id="submenu">
-							<a type="button" class="list-group-item bg-dark text-left"><i class="fas fa-angle-right"></i>New Service 1</a>
-							<a type="button" class="list-group-item bg-dark text-left"><i class="fas fa-angle-right"></i>New Service 2</a>
-							<a type="button" class="list-group-item bg-dark text-left"><i class="fas fa-angle-right"></i>New Service 3</a>
-						</li>
-
-						<li type="button" class="list-group-item bg-secondary text-left"><i class="fas fa-car"></i>New</li>
-
-						<li type="button" class="list-group-item bg-secondary text-left"><i class="fas fa-user"></i>Profile</li>
-
-						<li type="button" class="list-group-item bg-secondary text-left"><i class="fas fa-users"></i>Users</li>
-
-						<li class="list-group-item bg-secondary h-5"></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</body>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+				<ul class="list-group  text-white ">
+                    <li class="list-group-item bg-dark text-center"><h3>Brand logo</h3></li>
+                    <li class="list-group-item bg-secondary text-left"><i class="fas fa-tachometer-alt"></i> Dashboard</li>
+                    <li class="list-group-item bg-secondary text-left"><i class="fas fa-gift"></i> UI Elements</li>
+                    <div class="dropdown show bg-dark ">
+                        <li class="list-group-item text-left bg-secondary dropdown-toggle " data-toggle="dropdown"  ><i class="fas fa-globe-americas"></i> Services</li>
+						<div class="dropdown-menu import " >
+							<a class="dropdown-item text-white import" href="#"><i class="fas fa-angle-right"></i>Action</a>
+							<a class="dropdown-item text-white import" href="#"><i class="fas fa-angle-right"></i>Another action</a>
+							<a class="dropdown-item text-white import" href="#"><i class="fas fa-angle-right"></i>Something else here</a>
+						</div>
+					</div>
+					<li class="list-group-item bg-secondary text-left"><i class="fas fa-car"></i> New</li>
+					<li class="list-group-item bg-secondary text-left"><i class="fas fa-user"></i> Profile</li>
+					<li class="list-group-item bg-secondary text-left"><i class="fas fa-users"></i> Users</li>
+					<li class="list-group-item bg-secondary text-left  p-5"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
