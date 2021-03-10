@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
         <head>
             <title>ex3</title>
@@ -11,8 +11,8 @@
             while($i<=100){
                 $i++;
                 $sum =$sum+$i;
-               echo $sum."-";
-        }
+            }
+            echo "Tổng của 100 số nguyên đầu tiên là: ".$sum;
         ?>
         </body>
     </html>

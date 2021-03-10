@@ -1,12 +1,12 @@
-<DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <title>Vẽ bàn cờ bằng PHP</title>
-        <link rel="stylesheet" href="./css.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
     <body>
-    <div class="center">
-    <table width="270px" border="1px">
+    <div class="mt-5 ml-5">
+    <table class="border border-dark">
         <?php
         for($i=1;$i<=8;$i++)
         {
@@ -16,11 +16,11 @@
                 $total=$i+$j;
                 if($total%2 == 0)
                 {
-                    echo "<td class='white'></td>";
+                    echo "<td class='bg-light p-4'></td>";
                 }
                 else
                 {
-                    echo "<td class='black'></td>";
+                    echo "<td class='bg-dark p-4'></td>";
                 }
             }
             echo "</tr>";

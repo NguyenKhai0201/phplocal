@@ -1,4 +1,4 @@
-<DOCenTYPE html >
+<!DOCTYPE html >
     <html lang="">
     <head>
         <title>ex1</title>

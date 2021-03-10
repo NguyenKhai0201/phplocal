@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
         <head>
             <title>ex6</title>
@@ -8,9 +8,12 @@
         <?php
             $n="50";
             for($i=1;$i<=$n;$i++){
-                $array=array('$i');
-                $comma = implode("-",$array);
-                echo $comma;
+                if($i!=$n){
+                    echo $i."-";
+                }
+                else{
+                    echo $i;
+                }
             }
         ?>
         </body>
