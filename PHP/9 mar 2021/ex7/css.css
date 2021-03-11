@@ -10,3 +10,6 @@ table{
     width:300px;
     border:2px;
 }
+table td tr {
+    border-style: double;
+}
