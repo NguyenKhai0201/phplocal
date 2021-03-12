@@ -14,33 +14,40 @@
             .bgcolor{
                 background-color:lightgreen;
             }
-
+            h3{
+                font-weight:bold;
+            }
         </style>
     </head>
     <body>
-    <form action="#" method="POST">
-        <div class="container borderBody">
-            <h3 class="text-center container-fluid bgcolor p-3">Sign in</h3>
-            <label>
-                <input class="w-70 mt-3"  type="text" name="username" placeholder="Username" required />
-            </label><br>
-            <label>
-                <input class="w-70 mt-3" type="password" name="password" placeholder="Password" required />
-            </label><br>
-            <label><input class="w-70 m-3 bgcolor" type="submit" value="login"></label>
-        </div>
-    </form>
     <?php
-        if($_POST('username')==admin&&$_POST('password')==admin){
-            $name=$_POST('username');
-            $pass=$_POST('password');
+    $name=$notice=$pass="";
+    if($_SERVER["REQUEST_METHOD"]=="POST") {
+        if ($_POST['username'] == "admin" && $_POST['password'] == "admin") {
+            $name = $_POST['username'];
+            $pass = $_POST['password'];
+        } else {
+            $notice = "Thông tin đăng nhập không chính xác. Xin hãy kiểm tra lại!!!";
         }
-        else{
-            $notice="Thông tin đăng nhập không chính xác. Xin hãy kiểm tra lại!!!";
-        }
-        echo $name."<br>";
-        echo $pass."<br>";
-        echo $notice;
+    }
     ?>
+    <div class="container borderBody">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+            <h3 class="text-center bgcolor p-3">Sign in</h3>
+            <input class="form-control mt-3"  type="text" name="username" placeholder="Username" required />
+            <input class="form-control mt-3" type="password" name="password" placeholder="Password" required />
+            <input class="form-control mt-3 bgcolor mb-3" type="submit" value="login">
+        </form>
+    <div class="text-center bg-secondary">
+    <?php
+        if($_SERVER["REQUEST_METHOD"]=="POST"){
+            echo $name . "<br>";
+            echo $pass . "<br>";
+            echo $notice;
+        }
+
+    ?>
+    </div>
+    </div>
     </body>
 </html>
