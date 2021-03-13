@@ -12,10 +12,11 @@
     <?php
         $check=$i=0;
         $string="";
+        $ueoai=array("u","e","o","a","i");
         if($_SERVER["REQUEST_METHOD"]=="POST"){
             $tring=strtolower($_POST["Search"]);
             for($i=0;$i<strlen($string);$i++){
-                if(in_array($string[$i])){
+                if(in_array($string[$i],$ueoai)){
                     $check++;
                 }
             }
