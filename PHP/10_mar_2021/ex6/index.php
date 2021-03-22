@@ -19,6 +19,7 @@
                 if(in_array($string[$i],$ueoai)){
                     $check++;
                 }
+                echo "Ta có". $check."nguyên âm trong". $string;
             }
         }
     ?>
@@ -31,9 +32,5 @@
             <div class="text-center mt-2"><input class="text-center bg-primary" type="submit" name="submit" value="Submit"></div>
         </form>
     </div>
-    <?php
-    if ($_SERVER["REQUEST_METHOD"]=="POST"){
-        echo "Ta có". $check."nguyên âm trong". $string;
-    }
-    ?>
+
 </body>

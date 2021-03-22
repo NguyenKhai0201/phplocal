@@ -9,6 +9,39 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
+<?
+    $f_name=$l_name=$email=$gender=$state=$hobbies="";
+    $f_name_err=$l_name_err=$email_err=$gender_err="";
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (!empty($_POST["name"])) {
+        $f_name =$_POST["name"];
+    } else {
+        $f_name_err = "!First Name is required";
+    }
+    if (!empty($_POST["lastname"])) {
+        $l_name =$_POST["lastname"];
+    } else {
+        $l_name_err = "!Last Name is required";
+    }
+    if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
+        $email = $_POST["email"];
+    } else {
+        $email_err = "!Email is not valid";
+    }
+    if (!empty($_POST["gender"])) {
+        $gender =$_POST["gender"];
+    } else {
+        $gender_err = "!Gender is required";
+    }
+    $state=$_POST["states"];
+    if (empty($_POST["hobbies"])) {
+        $hobbies = "";
+    }
+    else{
+        $hobbies=$_POST["$hobbies"];
+    }
+}
+?>
     <div class="container-fluid float-left border mt-3 w-75">
             <div class="form-group text-center bg-light">
                 <h3 class="text-center p-2">Registration Form</h3>
@@ -16,20 +49,20 @@
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
                 <div class="form-group">
                     <label for="Firstname">First name</label>
-                    <input class="form-control" type="text" name="name" required />
+                    <input class="form-control" type="text" name="name"><span class="text-danger"><?php echo $f_name_err; ?></span>
                 </div>
                 <div class="form-group">
                     <label for="Lastname">Last name</label>
-                    <input class="form-control" type="text" name="lastname" required />
+                    <input class="form-control" type="text" name="lastname"><span class="text-danger"><?php echo $l_name_err; ?></span>
                 </div>
                 <div class="form-group">
-                    <label form="inputEmail">Email</label>
-                    <input class="form-control" type="email" name="email" required/>
+                    <label for="inputEmail">Email</label>
+                    <input class="form-control" type="email" name="email"><span class="text-danger"><?php echo $email_err; ?></span>
                 </div>
                 <div class="form-group">
                     <label>Gender</label>
                     <label><input type="radio" name="gender" value="male">Male</label>
-                    <label><input type="radio" name="gender" value="female">Female</label>
+                    <label><input type="radio" name="gender" value="female">Female</label><br/><span class="text-danger"><?php echo $gender_err; ?></span>
                 </div>
                 <div class="form-group">
                     <label>State</label>
@@ -66,5 +99,17 @@
             </div>
         </form>
     </div>
+<?php
+    if (!empty(!empty($_POST["name"])&&!empty($_POST["lastname"])&&!empty($_POST["gender"])&&filter_var($_POST["email"], FILTER_VALIDATE_EMAIL))){
+        echo "Đăng kí thành công."."<br/>";
+        echo "Thông tin: "."<br/>";
+        echo "First Name: " .$f_name."<br/>";
+        echo "Last Name: ".$l_name."<br/>";
+        echo "Email: ".$email."<br/>";
+        echo "Gender: ".$gender."<br/>";
+        echo "State: ".$state."<br/>";
+        echo "Hobbies: ".$hobbies;
+    }
+?>
 </body>
 </html>

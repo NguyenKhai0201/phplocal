@@ -107,7 +107,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         <script>
             const areYouSure=confirm('Do you want to order <?php echo $magazines. "magazins for".$duration."and to pay with".$payment;?>');
             if(areYouSure){
-                alert('Thank you very much for you order,we will supply as soon as possible the magazins for you to the address: <?php echo "<br>";echo "Mr.".$lastname."va". $name ; echo "<br>"; echo $address;?>')
+                alert("Thank you very much for you order,we will supply as soon as possible the magazins for you to the address: <?php echo "<br>";echo "Mr.".$lastname."va". $name ; echo "<br>"; echo $address;?>")
             }
         </script>
     <?php} }?>

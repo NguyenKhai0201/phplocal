@@ -55,7 +55,7 @@
     <?php
         // xuat
         if($_SERVER["REQUEST_METHOD"]=="POST"){
-            if(!filter_var($_POST["web"],FILTER_VALIDATE_URL)&& !is_numeric($_POST["phone"])&& !filter_var($_POST["email"],FILTER_VALIDATE_EMAIL)&&empty($_POST["name"])){
+            if(filter_var($_POST["web"],FILTER_VALIDATE_URL)&& is_numeric($_POST["phone"])&&filter_var($_POST["email"],FILTER_VALIDATE_EMAIL)&&!empty($_POST["name"])){
                 echo "Your Name: ".$name."<br>";
                 echo "Your Email: ".$email."<br>";
                 echo "Your Website: ".$web."<br>";
